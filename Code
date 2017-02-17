@@ -1,7 +1,7 @@
 
 --# Main
 function setup()
-    -- Almost irelevent stuff here
+    -- Almost irrelevent stuff here
     displayMode(FULLSCREEN)
     supportedOrientations(LANDSCAPE_RIGHT)
     
@@ -10,15 +10,15 @@ function setup()
     menubuttony=100 
     -- Sets the state of the game
     state = "menu"
-    -- These buttons are clasified as "menu" buttons, you can make diffrent buttons like this
+    -- These buttons are classified as "menu" buttons, you can make different buttons like this
     -- WIDTH/2 & HEIGHT*.5 is where the button will be, color is the color of the button, 
-    -- For your button to do somthing put, function() than a function to do..close()..then end the function
+    -- For your button to do something put 'function()', then a function to do..close()..then end the function
     menuButtons = {
         Button("restart", WIDTH/2, HEIGHT*.5, color(255, 0, 0, 255), function() close() end),}
     
-    -- These buttons are classified as "Not" menu buttons you can make diffrent buttons like this
+    -- These buttons are classified as "Not" menu buttons you can make different buttons like this
     NotmenuButtons = {
-    Button("restar", WIDTH/2, HEIGHT*.5, color(94, 210, 13, 255), function() close() end),}
+    Button("restart", WIDTH/2, HEIGHT*.5, color(94, 210, 13, 255), function() close() end),}
 end
 -------------------------------------------------------------------------------------------------------------
 function draw()
@@ -29,7 +29,7 @@ function draw()
         font("Baskerville-Bold")
         fill(255, 0, 20, 255)
         text("Buttons", WIDTH/2, HEIGHT-200)
-    -- This is where is acutally draws the button, without this nothing would work!
+    -- This is where is actually draws the button, without this nothing would show up!
     -- "munuButtons" is the set of button(s) that you made up in the setup function
     -- Change that to the diffrent set of buttons and it will load that button 
     -- IE, delete the "Not" so it is just menubuttons like this.....
@@ -65,7 +65,7 @@ end
     touch.x < 550 and
     touch.y > 50 and
     touch.y < 150 then
--- Is is the somthing, it closes the game
+-- If these conditions are true, it closes the game
     close()
                 
 end
